@@ -1,0 +1,32 @@
+package StringPackage;
+
+public class CountVowelConsonantInString {
+public static void main(String[] args) {
+	String str="Pune is city of Maharashtra";
+	CountVowelConsonantInString ref=new CountVowelConsonantInString();//create a object to call method
+	ref.vowelConsonant(str);//call the method and inside the parameter we pass variable(str) 
+}
+
+public void vowelConsonant(String str)
+{
+	int vowelCount=0;
+	int constantCount=0;
+	for(int i=0;i<str.length();i++)
+	{
+		if(str.charAt(i)=='a' || str.charAt(i)=='e' ||str.charAt(i)=='i' ||str.charAt(i)=='o' ||str.charAt(i)=='u' && str.charAt(i)!=' ')
+		{
+			 vowelCount++;//if condition is true then vowelCount updated of value by 1 each time
+		}
+		else
+		{
+			if( str.charAt(i)!=' ')
+			{
+				constantCount++;//if condition is true then constantCount updated of value by 1 each time
+			}
+			
+		}
+	}
+	System.out.println("total vowel in String :"+vowelCount);
+	System.out.println("total constant in String :"+constantCount);
+}
+}
