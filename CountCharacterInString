@@ -1,0 +1,21 @@
+package StringPackage;
+
+public class CountCharacterInString {
+public static void main(String[] args) {
+	String str="I am belong to Satna";
+	
+	int count=0;//declare the count variable to count the characters
+	for(int i=0;i<str.length();i++)
+	{
+		if(str.charAt(i)!=' ')//here i not equals to space it count the character
+		{
+			count++;//if condition is true then count value will be updated by 1
+		}
+	}
+	System.out.println(count);//print count value
+	
+	String str1="puneishistoricalplace";
+	//directly I want find the count of string from predefined method using length()
+	System.out.println(str1.length());
+}
+}
