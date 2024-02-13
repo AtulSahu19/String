@@ -1,0 +1,10 @@
+package StringPackage;
+
+public class RemoveSpace {
+public static void main(String[] args) {
+	String st="My name is Atul";
+	//using replaceAll method replace all the space
+	st=st.replaceAll(" ", "");
+	System.out.println(st);
+}
+}
