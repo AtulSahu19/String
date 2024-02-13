@@ -1,0 +1,17 @@
+
+public class StringRotation {
+public static void main(String[] args) {
+	String str1="abcdeabfgh" ,str2="cdeab";
+	str1=str1.concat(str1);//In str1 , str2 is present or not
+	//str2 sequence(cdeab) is present in str1 then condition will be true
+	if (str1.indexOf(str2)!=-1)
+{
+	System.out.println("Second String is a Rotation of first String");
+}
+	else
+	{
+		System.out.println("Second String is not a Rotation of first String");
+	}
+	
+}
+}
