@@ -1,0 +1,25 @@
+package StringPackage;
+
+public class ChangeCase {
+public static void main(String[] args) {
+	String str="Great Man";
+	StringBuffer newstr=new StringBuffer(str);
+	
+	for(int i=0;i<str.length();i++)
+	{
+		//isLowerCase method present in Character Class and use to comparison
+		if(Character.isLowerCase(str.charAt(i)))
+		{
+			//toUpperCase method present in Character Class and use to convert the character in UpperCase
+			newstr.setCharAt(i, Character.toUpperCase(str.charAt(i)));
+		}
+		//isUpperCase method present in Character Class and use to comparison
+		else if(Character.isUpperCase(str.charAt(i)))
+		{
+			//toLowerCase method present in Character Class and use to convert the character in LowerCase
+	 newstr.setCharAt(i,Character.toLowerCase(str.charAt(i)) );
+		}
+	}
+	System.out.println(newstr);
+}
+}
