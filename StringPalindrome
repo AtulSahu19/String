@@ -1,0 +1,27 @@
+package StringPackage;
+
+public class StringPalindrome {
+public static void main(String[] args) {
+	String str="KaNAk";
+	str=str.toLowerCase();//this method converted string into LowerCase
+	boolean flag=true;
+	
+	for(int i=0;i<str.length()/2;i++)
+	{
+		//check the string ,it is Palindrome or not 
+	if(str.charAt(i)!=(str.charAt(str.length()-i-1)))
+	{
+		flag=false;
+		break;
+	}
+	}
+	
+	if(flag) {
+		System.out.println("String is palindrome : "+str);
+	}
+	else {
+		System.out.println("String is not palindrome : "+str);
+	}
+	
+}
+}
