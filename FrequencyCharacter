@@ -1,0 +1,33 @@
+package StringPackage;
+
+public class FrequencyCharacter {
+public static void main(String[] args) {
+	String str="mahabharat";
+	int []freq=new int[str.length()];
+	
+	char ch[]=str.toCharArray();
+	
+	int i,j;
+	
+	for(i=0;i<str.length();i++)
+	{
+	freq[i]=1;
+	for(j=i+1;j<str.length();j++)
+	{
+		if(ch[i]==ch[j] &&ch[i]!=' ')
+		{
+			freq[i]++;
+			
+			ch[j]='0';
+		}
+	}
+	}
+	for(i=0;i<str.length();i++)
+	{
+		if(ch[i]!=' ' &&ch[i]!='0')
+		{
+			System.out.println(ch[i]+"- "+freq[i]);
+		}
+	}
+}
+}
